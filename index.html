@@ -1,67 +1,57 @@
 <html>
   <head>
-    <meta />
-    <meta />
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban</title>
+    <link rel="stylesheet" href="assets/style.css" />
   </head>
 
   <body>
-    <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
+    <!-- Navigation Sidebar -->
     <nav>
       <div>
+        <img src="Group 16.png" alt="Logo" class="logo" />
         <h4>ALL BOARDS (1)</h4>
-        <button>Launch Career</button>
+        <button class="active-board">Launch Career</button>
       </div>
     </nav>
 
-    <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <div>
+    <!-- Main Layout -->
+    <div class="main-layout">
       <header>
-        <div>
-          <h2>Launch Career</h2>
-        </div>
+        <h2>Launch Career</h2>
       </header>
 
-      <div>
-        <main>
-          <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div>
-            <div>
-              <span></span>
-              <h4>TODO</h4>
-            </div>
-            <!-- Tasks container for TODO -->
-            <div>
-              <div>Launch Epic Career 🚀</div>
-              <div>Learn Data Structures and Algorithms 📚</div>
-            </div>
+      <main>
+        <!-- TODO Column -->
+        <div class="column">
+          <h4><span class="dot purple"></span> TODO (4)</h4>
+          <div class="tasks">
+            <div class="task">Launch Epic Career 🚀</div>
+            <div class="task">Conquer React 📘</div>
+            <div class="task">Understand Databases 🗂️</div>
+            <div class="task">Crush Frameworks 🛠️</div>
           </div>
-          <!-- DOING Column -->
-          <div>
-            <div>
-              <span></span>
-              <h4>DOING</h4>
-            </div>
-            <!-- Tasks container for DOING -->
-            <div>
-              <div>Master JavaScript 💛</div>
-              <div>Keep on Going 🏆</div>
-            </div>
+        </div>
+
+        <!-- DOING Column -->
+        <div class="column">
+          <h4><span class="dot yellow"></span> DOING (2)</h4>
+          <div class="tasks">
+            <div class="task">Master JavaScript 💛</div>
+            <div class="task">Never Give Up 🏆</div>
           </div>
-          <!-- DONE Column -->
-          <div>
-            <div>
-              <span></span>
-              <h4>DONE</h4>
-            </div>
-            <!-- Tasks container for DONE -->
-            <div>
-              <div>Contribute to Open Source Projects 🌐</div>
-              <div>Build Portfolio Projects 🛠️</div>
-            </div>
+        </div>
+
+        <!-- DONE Column -->
+        <div class="column">
+          <h4><span class="dot green"></span> DONE (2)</h4>
+          <div class="tasks">
+            <div class="task">Explore ES6 Features ✨</div>
+            <div class="task">Have fun 😄</div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>

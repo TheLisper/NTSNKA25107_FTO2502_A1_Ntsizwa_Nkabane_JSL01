@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #e4ebfa;
+  height: 100vh;
+}
+
+/* Navigation Sidebar */
+nav {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+nav h4 {
+  color: #828fa3;
+  margin-bottom: 20px;
+}
+
+nav button {
+  width: 100%;
+  height: 48px;
+  background-color: #635fc7;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  text-align: left;
+  padding-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav button.active-board {
+  background-color: #635fc7;
+}
+
+nav button:hover {
+  background-color: #4a47a3;
+}
+
+/* Main Layout */
+.main-layout {
+  flex: 1;
+  padding: 20px;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+header h2 {
+  color: #000112;
+}
+
+/* Columns */
+main {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  flex: 1;
+}
+
+.column h4 {
+  font-size: 14px;
+  color: #828fa3;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.column h4 .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.column h4 .purple {
+  background-color: #635fc7;
+}
+
+.column h4 .yellow {
+  background-color: #fbc02d;
+}
+
+.column h4 .green {
+  background-color: #4caf50;
+}
+
+/* Tasks */
+.tasks {
+  background: #f4f7fd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task {
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  color: #000112;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Stack elements vertically for mobile */
+  }
+
+  nav {
+    width: 100%; /* Full width for mobile */
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  nav .logo {
+    margin: 0 auto 10px;
+    display: block;
+    text-align: center;
+  }
+
+  nav h4 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .main-layout {
+    padding: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  main {
+    flex-direction: column; /* Stack columns vertically for mobile */
+    gap: 15px;
+  }
+
+  .column {
+    width: 100%; /* Full width for mobile */
+  }
+}
